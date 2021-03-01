@@ -1,16 +1,15 @@
 import { render, screen } from '@testing-library/react';
 
-import Main from '.';
+import Header from '.';
 
-describe('<Main />', () => {
+describe('<Header />', () => {
   it('should render the heading', () => {
-    const { container } = render(<Main />);
+    const { container } = render(<Header />);
 
     expect(
-      screen.getByRole('heading', { name: /app name/i })
+      screen.getByRole('heading', { name: /Header/i })
     ).toBeInTheDocument();
 
-    // Snapshot
     expect(container.firstChild).toMatchSnapshot();
   });
 });
