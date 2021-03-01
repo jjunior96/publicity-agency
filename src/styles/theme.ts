@@ -1,10 +1,17 @@
 export default {
+  contentHeight: {
+    sidebar: '6rem',
+    footer: '20rem'
+  },
   grid: {
-    container: '130rem',
+    container: '112rem',
     gutter: '3.2rem'
   },
   border: {
     radius: '0.4rem'
+  },
+  box: {
+    shadow: '0 8px 8px rgba(0, 0, 0, 0.08)'
   },
   font: {
     family:
@@ -23,16 +30,12 @@ export default {
     }
   },
   colors: {
-    primary: '',
-    secondary: '',
-    mainBg: '',
-    lightBg: '',
-    white: '',
-    black: '',
-    lightGray: '',
-    gray: '',
-    darkGray: '',
-    red: ''
+    primary: '#F2B705',
+    mainBg: '#fff',
+    white: '#fff',
+    lightGray: '#D5D5D5',
+    gray: '#747474',
+    darkGray: '#322E31'
   },
   spacings: {
     xxsmall: '0.8rem',
@@ -49,9 +52,5 @@ export default {
     overlay: 30,
     modal: 40,
     alwaysOnTop: 50
-  },
-  transition: {
-    default: '0.3s ease-in-out',
-    fast: '0.1s ease-in-out'
   }
 } as const;
