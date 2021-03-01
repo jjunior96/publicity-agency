@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test": "jest",
+    "deploy": "next build && next export",
     "lint": "eslint src --max-warnings=0",
     "test:watch": "yarn test --watch",
     "generate": "yarn plop --plopfile generators/plopfile.js",
