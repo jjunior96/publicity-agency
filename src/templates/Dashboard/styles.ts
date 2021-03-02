@@ -28,11 +28,14 @@ export const Title = styled.h1`
 
     @media (max-width: 768px) {
       max-width: 320px;
-      font-size: 4rem;
+      font-size: 3.2rem;
+      line-height: 4.4rem;
 
       strong {
-        font-size: 5.6rem;
+        font-size: 5.2rem;
+        font-weight: bold;
         border-bottom: 2px solid ${theme.colors.primary};
+        line-height: 5rem;
       }
     }
   `}

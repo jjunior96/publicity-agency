@@ -6,7 +6,6 @@ export const Container = styled.header`
     height: ${theme.contentHeight.sidebar};
     position: fixed;
     top: 0;
-    /* background-color: ${theme.colors.white}; */
     backdrop-filter: blur(5px);
     box-shadow: ${theme.box.shadow};
     z-index: ${theme.layers.alwaysOnTop};
