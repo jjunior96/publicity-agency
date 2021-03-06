@@ -54,6 +54,7 @@ export const MenuItem = styled.li`
       text-decoration: none;
       color: ${theme.colors.white};
       padding: 0.5rem 0;
+      transition: color 0.3s, border-bottom 0.3s;
 
       &:hover {
         color: ${theme.colors.primary};

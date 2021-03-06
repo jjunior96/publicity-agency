@@ -42,6 +42,9 @@ export const Title = styled.h1`
 `;
 
 export const ImageHome = styled.div`
+  /* width: 100%;
+  height: 100vh; */
+
   img {
     width: 100vw;
     height: 100vh;

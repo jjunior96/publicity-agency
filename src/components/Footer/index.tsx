@@ -1,5 +1,9 @@
 import Logo from 'components/Logo';
+
+import { HeaderData } from 'components/Header/data';
+
 import * as S from './styles';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -14,7 +18,13 @@ const Footer = () => {
         </S.FooterInfo>
 
         <S.FooterInfo>
-          <S.FooterText>Teste</S.FooterText>
+          <S.FooterList>
+            {HeaderData.map((item) => (
+              <S.FooterItem key={item.id}>
+                <Link href={item.path}>{item.name}</Link>
+              </S.FooterItem>
+            ))}
+          </S.FooterList>
         </S.FooterInfo>
       </S.Content>
     </S.Container>
