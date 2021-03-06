@@ -5,7 +5,6 @@ export const Container = styled.footer`
     width: 100%;
     height: ${theme.contentHeight.footer};
     background-color: ${theme.colors.darkGray};
-    /* position: fixed; */
     bottom: 0;
     display: flex;
     align-items: center;
@@ -37,8 +36,32 @@ export const FooterInfo = styled.div`
 
 export const FooterText = styled.p`
   margin-top: 1.6rem;
-  max-width: 220px;
+  max-width: 210px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #fff;
+`;
+
+export const FooterList = styled.ul``;
+
+export const FooterItem = styled.li`
+  ${({ theme }) => css`
+    font-size: 1.2rem;
+    list-style: none;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &:hover {
+        color: ${theme.colors.primary};
+        /* border-bottom: 2px solid ${theme.colors.primary}; */
+      }
+    }
+
+    & + li {
+      margin-top: 1.6rem;
+    }
+  `}
 `;
